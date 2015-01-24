@@ -1,0 +1,26 @@
+<html ng-app="app">
+  <script src="https://code.angularjs.org/1.3.10/angular.js"></script>
+  <link rel="stylesheet" href="style.css" />
+  
+  <body ng-controller="Demo">
+    <sidebar ng-class="{'slide-animation' : sidebar}">
+      Hello World
+    </sidebar>
+    <blacklay ng-show="sidebar" ng-click="hide()">
+    </blacklay>
+  
+    <button ng-click="show()">show</button>
+  </body>
+  <script>
+    angular.module('app', [])
+      .controller('Demo', function($scope) {
+         
+        $scope.show = function() {
+          $scope.sidebar = true;
+        };
+        $scope.hide = function() {sssssssssss
+          $scope.sidebar = false;
+        };
+      });
+  </script>
+</html>
